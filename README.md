@@ -140,7 +140,7 @@ Con una base de datos relacional, estos procesos pueden centralizarse y optimiza
 
 ## 💾 Script SQL
 
-Consulta el archivo `vive_matcha.sql` en este repositorio para ver la creación completa de todas las tablas en MySQL.
+Consulta el archivo `Entrega SQL (Vive Matcha).sql` en este repositorio para ver la creación completa de todas las tablas en MySQL.
 
 ---
 
