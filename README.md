@@ -138,12 +138,6 @@ Con una base de datos relacional, estos procesos pueden centralizarse y optimiza
 
 ---
 
-## 🧩 Diagrama entidad-relación (E-R)
-
-🔗 [Ver diagrama en dbdiagram.io](https://dbdiagram.io/) *(puedes crear tu diagrama y colocar el enlace real aquí)*
-
----
-
 ## 💾 Script SQL
 
 Consulta el archivo `vive_matcha.sql` en este repositorio para ver la creación completa de todas las tablas en MySQL.
@@ -153,5 +147,5 @@ Consulta el archivo `vive_matcha.sql` en este repositorio para ver la creación 
 ## 👤 Autor
 
 **Ruben Ferrer**  
-Proyecto Final de SQL – Coderhouse  
+Proyecto de SQL – Coderhouse  
 **Vive Matcha** | Julio 2025
