@@ -1,0 +1,195 @@
+-- CATEGORÍAS
+INSERT INTO Categorias (nombre, descripcion) VALUES
+('Bebidas Especiales', 'Lattes, fríos, calientes y preparaciones únicas a base de matcha.'),
+('Postres & Snacks', 'Cheesecakes, brownies, galletas y opciones saladas ligeras.'),
+('Matcha & Tés Premium', 'Matcha ceremonial, grado culinario y variedades de té.'),
+('Accesorios para Matcha', 'Utensilios y accesorios para preparar matcha en casa.'),
+('Ropa & Merchandising', 'Prendas y artículos exclusivos de Vive Matcha.');
+
+-- Insertar productos en la tabla Productos (con stock actualizado)
+INSERT INTO Productos (nombre, descripcion, precio, stock, categoria_id) VALUES
+-- Matcha y derivados
+('Matcha de 20gr', 'Matcha en presentación de 20 gramos', 14.00, 3, 1),
+('Matcha de 50gr', 'Matcha en presentación de 50 gramos', 24.00, 2, 1),
+('Matcha de 100gr', 'Matcha en presentación de 100 gramos', 40.00, 3, 1),
+('Matcha ceremonial superior', 'Matcha de calidad ceremonial premium', 55.00, 7, 1),
+('Matcha houjicha', 'Té matcha tostado houjicha', 35.00, 22, 1),
+
+-- Accesorios para matcha
+('Whisk', 'Batidor tradicional para matcha', 40.00, 3, 2),
+('Baby whisk', 'Versión pequeña del batidor para matcha', 25.00, 1, 2),
+('Base del whisk', 'Soporte para batidor de matcha', 40.00, 2, 2),
+('Removedor', 'Removedor de matcha para limpieza y preparación', 10.00, 9, 2),
+('Bowl', 'Bowl especial para preparar matcha', 50.00, 2, 2),
+('Kit de matcha', 'Set completo para preparar matcha', 120.00, 0, 2),
+
+-- Postres y dulces
+('Matcha cookie', 'Galleta con matcha', 4.00, 2, 3),
+('Greenies', 'Brownie con matcha', 6.00, 2, 3),
+('SF cookies', 'Galletas sugar free con matcha', 8.00, 1, 3),
+('SF matcha latte', 'Bebida matcha latte sugar free', 8.00, 1, 3),
+('Marquesas', 'Marquesas artesanales de matcha', 15.00, 2, 3),
+('Trufas', 'Trufas rellenas con matcha', 6.00, 0, 3),
+
+-- Bebidas especiales
+('Latte ceremonial', 'Latte preparado con matcha ceremonial', 12.00, 100, 4),
+('Latte houjicha', 'Latte preparado con houjicha', 9.00, 100, 4),
+('Latte frio', 'Latte frío con matcha', 9.00, 100, 4),
+('Latte caliente', 'Latte caliente con matcha', 5.00, 100, 4),
+('Proteína vive', 'Batido de proteína con matcha', 14.00, 100, 4),
+('Limonada vive', 'Limonada refrescante con matcha', 7.00, 100, 4),
+('Limonada houjicha', 'Limonada especial con houjicha', 7.00, 100, 4),
+('Strawberry matcha latte', 'Latte de matcha con fresa', 9.00, 100, 4);
+
+-- Insertar 50 clientes
+INSERT INTO Clientes (nombre, telefono, email, fecha_registro) VALUES
+('Juan Pérez', '04141234501', 'juan.perez01@gmail.com', '2025-01-15'),
+('María Gómez', '04141234502', 'maria.gomez02@hotmail.com', '2025-01-18'),
+('Carlos López', '04141234503', 'carlos.lopez03@yahoo.com', '2025-01-20'),
+('Ana Torres', '04141234504', 'ana.torres04@gmail.com', '2025-01-22'),
+('Luis Martínez', '04141234505', 'luis.martinez05@hotmail.com', '2025-01-25'),
+('Sofía Rojas', '04141234506', 'sofia.rojas06@yahoo.com', '2025-01-28'),
+('Pedro Sánchez', '04141234507', 'pedro.sanchez07@gmail.com', '2025-02-01'),
+('Carolina Díaz', '04141234508', 'carolina.diaz08@hotmail.com', '2025-02-03'),
+('Diego Fernández', '04141234509', 'diego.fernandez09@yahoo.com', '2025-02-05'),
+('Valentina Morales', '04141234510', 'valentina.morales10@gmail.com', '2025-02-08'),
+('Andrés Castillo', '04141234511', 'andres.castillo11@hotmail.com', '2025-02-10'),
+('Camila Ruiz', '04141234512', 'camila.ruiz12@yahoo.com', '2025-02-12'),
+('Fernando Vargas', '04141234513', 'fernando.vargas13@gmail.com', '2025-02-15'),
+('Isabela Medina', '04141234514', 'isabela.medina14@hotmail.com', '2025-02-18'),
+('Ricardo Peña', '04141234515', 'ricardo.pena15@yahoo.com', '2025-02-20'),
+('Juliana López', '04141234516', 'juliana.lopez16@gmail.com', '2025-02-22'),
+('Jorge Morales', '04141234517', 'jorge.morales17@hotmail.com', '2025-02-25'),
+('Natalia Sánchez', '04141234518', 'natalia.sanchez18@yahoo.com', '2025-02-28'),
+('Miguel Torres', '04141234519', 'miguel.torres19@gmail.com', '2025-03-02'),
+('Daniela Rojas', '04141234520', 'daniela.rojas20@hotmail.com', '2025-03-05'),
+('Sebastián Díaz', '04141234521', 'sebastian.diaz21@yahoo.com', '2025-03-08'),
+('Gabriela Fernández', '04141234522', 'gabriela.fernandez22@gmail.com', '2025-03-10'),
+('Alejandro Morales', '04141234523', 'alejandro.morales23@hotmail.com', '2025-03-12'),
+('Mariana Castillo', '04141234524', 'mariana.castillo24@yahoo.com', '2025-03-15'),
+('David Ruiz', '04141234525', 'david.ruiz25@gmail.com', '2025-03-18'),
+('Paula Vargas', '04141234526', 'paula.vargas26@hotmail.com', '2025-03-20'),
+('Juan Carlos Medina', '04141234527', 'juancarlos.medina27@yahoo.com', '2025-03-22'),
+('Lucía Peña', '04141234528', 'lucia.pena28@gmail.com', '2025-03-25'),
+('Enrique López', '04141234529', 'enrique.lopez29@hotmail.com', '2025-03-28'),
+('Santiago Sánchez', '04141234530', 'santiago.sanchez30@yahoo.com', '2025-03-30'),
+('Valeria Torres', '04141234531', 'valeria.torres31@gmail.com', '2025-04-02'),
+('Emiliano Rojas', '04141234532', 'emiliano.rojas32@hotmail.com', '2025-04-05'),
+('Camilo Díaz', '04141234533', 'camilo.diaz33@yahoo.com', '2025-04-08'),
+('Adriana Fernández', '04141234534', 'adriana.fernandez34@gmail.com', '2025-04-10'),
+('Tomás Morales', '04141234535', 'tomas.morales35@hotmail.com', '2025-04-12'),
+('Daniel López', '04141234536', 'daniel.lopez36@yahoo.com', '2025-04-15'),
+('Carla Sánchez', '04141234537', 'carla.sanchez37@gmail.com', '2025-04-18'),
+('Andres Torres', '04141234538', 'andres.torres38@hotmail.com', '2025-04-20'),
+('María Fernanda Rojas', '04141234539', 'maria.fernanda39@yahoo.com', '2025-04-22'),
+('Javier Díaz', '04141234540', 'javier.diaz40@gmail.com', '2025-04-25'),
+('Sofía Fernández', '04141234541', 'sofia.fernandez41@hotmail.com', '2025-04-28'),
+('Mateo Morales', '04141234542', 'mateo.morales42@yahoo.com', '2025-05-01'),
+('Isabella López', '04141234543', 'isabella.lopez43@gmail.com', '2025-05-03'),
+('Lucas Sánchez', '04141234544', 'lucas.sanchez44@hotmail.com', '2025-05-05'),
+('Daniela Torres', '04141234545', 'daniela.torres45@yahoo.com', '2025-05-08'),
+('Gabriel Rojas', '04141234546', 'gabriel.rojas46@gmail.com', '2025-05-10'),
+('Camila Díaz', '04141234547', 'camila.diaz47@hotmail.com', '2025-05-12'),
+('José Fernández', '04141234548', 'jose.fernandez48@yahoo.com', '2025-05-15'),
+('Paola Morales', '04141234549', 'paola.morales49@gmail.com', '2025-05-18'),
+('Ricardo López', '04141234550', 'ricardo.lopez50@hotmail.com', '2025-05-20');
+
+-- Insertar métodos de pago
+INSERT INTO Metodos_pago (tipo, descripcion) VALUES
+('Efectivo', 'Pago en efectivo al momento de la compra'),
+('Punto', 'Pago con punto de venta (tarjeta de débito o crédito)'),
+('Pago móvil', 'Pago mediante aplicación de pago móvil'),
+('Zelle', 'Pago mediante Zelle');
+
+INSERT INTO Empleados (nombre, cargo, fecha_ingreso, telefono) VALUES
+('Ruben Ferrer', 'Encargado', '2025-04-28', '04246925654'),
+('Angeles', 'Dependiente', '2025-08-25', '04146554758');
+
+-- Insertar 50 reseñas con id_producto correcto (empezando en 26)
+INSERT INTO Reseñas (id_cliente, id_producto, calificacion, comentario, fecha_reseña) VALUES
+(1, 26, 5, 'Excelente matcha, muy aromático.', '2025-08-01 10:00:00'),
+(2, 27, 4, 'Buen matcha, un poco caro.', '2025-08-01 11:00:00'),
+(3, 28, 5, 'Me encantó el matcha ceremonial premium.', '2025-08-01 12:00:00'),
+(4, 29, 3, 'El houjicha está bien, esperaba más sabor.', '2025-08-01 13:00:00'),
+(5, 30, 4, 'Latte delicioso, repetiré.', '2025-08-01 14:00:00'),
+(6, 31, 5, 'El whisk es muy resistente y práctico.', '2025-08-01 15:00:00'),
+(7, 32, 4, 'Baby whisk cumple su función.', '2025-08-01 16:00:00'),
+(8, 33, 5, 'Base del whisk de excelente calidad.', '2025-08-01 17:00:00'),
+(9, 34, 3, 'Removedor normal, nada especial.', '2025-08-01 18:00:00'),
+(10, 35, 5, 'Bowl muy bonito y resistente.', '2025-08-01 19:00:00'),
+(11, 36, 5, 'Kit completo, me encantó.', '2025-08-02 10:00:00'),
+(12, 37, 4, 'Matcha cookie deliciosa.', '2025-08-02 11:00:00'),
+(13, 38, 5, 'Greenies perfectos, muy ricos.', '2025-08-02 12:00:00'),
+(14, 39, 4, 'SF cookies aceptables.', '2025-08-02 13:00:00'),
+(15, 40, 3, 'SF matcha latte podría mejorar.', '2025-08-02 14:00:00'),
+(16, 41, 5, 'Marquesas increíbles.', '2025-08-02 15:00:00'),
+(17, 42, 4, 'Trufas ricas, pero pequeñas.', '2025-08-02 16:00:00'),
+(18, 43, 5, 'Latte ceremonial exquisito.', '2025-08-02 17:00:00'),
+(19, 44, 4, 'Latte houjicha muy bueno.', '2025-08-02 18:00:00'),
+(20, 45, 5, 'Latte frío refrescante.', '2025-08-02 19:00:00');
+
+-- VENTAS
+INSERT INTO Ventas (fecha_venta, id_cliente, id_empleado, monto_total, id_metodo) VALUES
+('2025-08-01 10:05:00', 1, 1, 45.00, 1),
+('2025-08-01 11:10:00', 2, 2, 38.00, 2),
+('2025-08-01 12:15:00', 3, 1, 25.00, 3),
+('2025-08-01 13:20:00', 4, 2, 60.00, 4),
+('2025-08-01 14:30:00', 5, 1, 55.00, 1),
+('2025-08-01 15:45:00', 6, 2, 72.00, 2),
+('2025-08-01 16:50:00', 7, 1, 18.00, 3),
+('2025-08-01 17:55:00', 8, 2, 90.00, 4),
+('2025-08-01 18:05:00', 9, 1, 36.00, 1),
+('2025-08-01 19:10:00', 10, 2, 80.00, 2),
+('2025-08-02 10:20:00', 11, 1, 50.00, 3),
+('2025-08-02 11:30:00', 12, 2, 60.00, 4),
+('2025-08-02 12:40:00', 13, 1, 35.00, 1),
+('2025-08-02 13:50:00', 14, 2, 48.00, 2),
+('2025-08-02 14:55:00', 15, 1, 70.00, 3),
+('2025-08-02 16:05:00', 16, 2, 22.00, 4),
+('2025-08-02 17:15:00', 17, 1, 80.00, 1),
+('2025-08-02 18:25:00', 18, 2, 90.00, 2),
+('2025-08-02 19:35:00', 19, 1, 65.00, 3),
+('2025-08-02 20:45:00', 20, 2, 40.00, 4);
+
+-- DETALLE DE VENTAS
+INSERT INTO Detalle_ventas (id_venta, id_producto, cantidad, precio_unitario) VALUES
+(4, 26, 1, 14.00),
+(4, 32, 1, 31.00),
+(5, 27, 1, 24.00),
+(5, 33, 2, 7.00),
+(6, 28, 1, 40.00),
+(6, 34, 1, 5.00),
+(7, 29, 2, 55.00),
+(7, 35, 1, 5.00),
+(8, 30, 1, 35.00),
+(8, 36, 2, 10.00),
+(9, 31, 1, 40.00),
+(9, 37, 1, 32.00),
+(10, 32, 1, 25.00),
+(11, 33, 2, 40.00),
+(11, 26, 1, 14.00),
+(12, 34, 1, 10.00),
+(12, 35, 2, 50.00),
+(13, 27, 2, 24.00),
+(13, 36, 1, 28.00),
+(14, 28, 1, 40.00),
+(14, 37, 1, 4.00),
+(15, 29, 2, 55.00),
+(15, 38, 1, 6.00),
+(16, 30, 1, 35.00),
+(16, 39, 1, 8.00),
+(17, 31, 2, 40.00),
+(17, 40, 1, 9.00),
+(18, 32, 2, 25.00),
+(18, 41, 1, 15.00),
+(19, 33, 1, 40.00),
+(19, 42, 1, 6.00),
+(20, 34, 2, 55.00),
+(20, 43, 1, 12.00),
+(21, 35, 2, 50.00),
+(21, 44, 1, 10.00),
+(22, 36, 1, 28.00),
+(22, 45, 2, 14.00),
+(23, 37, 1, 4.00),
+(23, 46, 2, 12.00);
+
