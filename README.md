@@ -144,6 +144,26 @@ Consulta el archivo `Entrega SQL (Vive Matcha).sql` en este repositorio para ver
 
 ---
 
+🔹 Vistas creadas
+Nombre de la Vista	Descripción	Objetivo	Tablas que la componen
+vw_DetalleVentas	Muestra el detalle completo de las ventas realizadas.	Consultar productos vendidos, cantidades, clientes y empleados.	Ventas, Detalle_Ventas, Productos, Clientes, Empleados
+vw_VentasPorCliente	Resumen de todas las ventas agrupadas por cliente.	Analizar comportamiento de compra de cada cliente.	Ventas, Clientes
+vw_VentasPorProducto	Total de unidades vendidas y monto generado por producto.	Evaluar los productos más vendidos y su impacto en ingresos.	Detalle_Ventas, Productos
+vw_VentasPorEmpleado	Resumen de las ventas registradas por cada empleado.	Medir rendimiento individual de empleados.	Ventas, Empleados
+vw_ReseñasClientes	Lista de reseñas de clientes con su información.	Analizar retroalimentación y satisfacción de clientes.	Clientes, Reseñas
+🔹 Funciones personalizadas
+Nombre de la Función	Descripción	Objetivo	Tablas relacionadas
+fn_TotalGastadoCliente(idCliente)	Calcula el monto total gastado por un cliente en todas sus compras.	Medir el valor económico de cada cliente.	Ventas
+fn_PromedioVentasEmpleado(idEmpleado)	Devuelve el promedio de ventas registradas por un empleado.	Evaluar desempeño promedio de empleados.	Ventas
+🔹 Stored Procedures
+Nombre del SP	Descripción	Objetivo	Tablas afectadas
+sp_RegistrarVentaSimple	Inserta una nueva venta con un solo producto, actualiza stock y total.	Automatizar creación de ventas y su detalle.	Ventas, Detalle_Ventas, Productos
+sp_ObtenerHistorialCliente	Lista todas las compras realizadas por un cliente.	Consultar rápidamente el historial de ventas de un cliente.	Ventas, Clientes
+🔹 Triggers
+Nombre del Trigger	Descripción	Funcionalidad	Objetivo	Tablas/situaciones
+trg_ActualizarStockVenta	Disminuye el stock de un producto al insertar un detalle de venta.	Resta cantidad vendida al stock disponible.	Mantener inventario actualizado.	INSERT en Detalle_Ventas
+trg_ActualizarMontoVenta	Actualiza el campo monto_total en la tabla de ventas.	Suma subtotales de productos al total de la venta.	Registrar correctamente el total de cada venta.	INSERT en Detalle_Ventas
+
 ## 👤 Autor
 
 **Ruben Ferrer**  
