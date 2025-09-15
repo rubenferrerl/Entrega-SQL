@@ -183,6 +183,13 @@ Consulta el archivo `Entrega SQL (Vive Matcha).sql` en este repositorio para ver
 | `trg_ActualizarStockVenta` | Disminuye el stock de un producto al insertar un detalle de venta. | Resta cantidad vendida al stock disponible. | Mantener inventario actualizado. | `INSERT` en `Detalle_Ventas` |
 | `trg_ActualizarMontoVenta` | Actualiza el campo `monto_total` en la tabla de ventas. | Suma subtotales de productos al total de la venta. | Registrar correctamente el total de cada venta. | `INSERT` en `Detalle_Ventas` |
 
+## conclusiones
+
+Ventas por Método de Pago: Los datos te permiten ver qué métodos de pago son más populares entre los clientes: efectivo, punto de venta, pago móvil y Zelle. Este análisis es útil para la gestión de tesorería y para optimizar los procesos de pago.
+
+Rendimiento de Productos: Con los datos de ventas y la vista vw_Productos_Ventas, puedes identificar los productos más vendidos y los que generan más ingresos. Por ejemplo, si el 'Kit de matcha' es el producto más vendido, puedes enfocar tu inventario y marketing en él.
+
+Análisis de Clientes: La vista vw_Clientes_Compras te permite ver a los clientes que más contribuyen a tus ingresos totales. Este análisis es clave para crear programas de lealtad o campañas de marketing dirigidas.
 
 ## 👤 Autor
 
